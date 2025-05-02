@@ -1,0 +1,51 @@
+name: vccm
+description: A modern fintech app with advanced security and AI features.
+version: 1.0.0+1
+publish_to: 'none'
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  provider: ^6.1.1
+  shared_preferences: ^2.2.2
+  device_info_plus: ^9.1.1
+  local_auth: ^2.1.7
+  flutter_animate: ^4.3.0
+  qr_flutter: ^4.1.0
+  qr_code_scanner: ^1.0.1
+  http: ^1.1.2
+  intl: ^0.19.0
+  fl_chart: ^0.66.0
+  path_provider: ^2.1.1
+  sqflite: ^2.3.0
+  crypto: ^3.0.3
+  uuid: ^4.2.2
+  firebase_core: ^3.13.0
+  firebase_auth: ^5.5.3
+  google_sign_in: ^6.1.6
+  flutter_facebook_auth: ^6.0.4
+  url_launcher: ^6.2.5
+  encrypt: ^5.0.3
+  flutter_secure_storage: ^9.0.0
+  cloud_firestore: ^5.6.7
+  dio: ^5.2.1
+  integration_test:
+    sdk: flutter
+  web3dart: ^2.5.3
+  firebase_auth_web: ^5.14.2
+  flutter_svg: ^1.1.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/icons/
