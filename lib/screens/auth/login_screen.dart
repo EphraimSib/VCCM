@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:local_auth/local_auth.dart';
 import 'package:provider/provider.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import '../../providers/user_provider.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -214,10 +215,6 @@ class _LoginScreenState extends State<LoginScreen> with SingleTickerProviderStat
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-import 'package:flutter_svg/flutter_svg.dart';
-
-...
-
                             IconButton(
                               onPressed: () => userProvider.signInWithGoogle(),
                               icon: SvgPicture.asset('assets/icons/google.svg', width: 24),
@@ -271,3 +268,4 @@ import 'package:flutter_svg/flutter_svg.dart';
     );
   }
 }
+

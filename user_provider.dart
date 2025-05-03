@@ -12,12 +12,10 @@ class UserProvider with ChangeNotifier {
 
   Future<bool> checkAuthStatus() async {
     final user = _authService.getCurrentUser();
-    if (user != null) {
-      _user = await _userRepository.getUserData(user.uid);
-      notifyListeners();
-      return true;
-    }
-    return false;
+    _user = await _userRepository.getUserData(user.uid);
+    notifyListeners();
+    return true;
+      return false;
   }
 
   Future<void> signUp({
